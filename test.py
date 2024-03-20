@@ -30,19 +30,22 @@ def checkIfExist( arr: list[int]) -> bool:
         return False
     
     
-def shell_sort(nums):
-    gap = len(nums) // 2
-    while gap > 0:
-        for idx in range(gap, len(nums  )):
-            elem = nums[idx]
-            position = idx
+# def shell_sort(nums):
+#     gap = len(nums) // 2
+#     while gap > 0:
+#         for idx in range(gap, len(nums  )):
+#             elem = nums[idx]
+#             position = idx
             
-            while position >= gap and nums[position - gap] > elem:
-                nums[position] = nums[position - gap]
-                position -= gap
-            nums[position] = elem
-        gap //= 2
-    return nums
+#             while position >= gap and nums[position - gap] > elem:
+#                 nums[position] = nums[position - gap]
+#                 position -= gap
+#             nums[position] = elem
+#         gap //= 2
+#     return nums
+
+def sum(a, b):
+    return a + b
 
 def n_in_arr_and_double(arr):
     arr = sorted(arr)
